@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.chaquo.python'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29'
+
+    defaultConfig {
+        applicationId "com.smartvision.webappessentials"
+        minSdkVersion 23
+        targetSdkVersion 29
+        //give source folder to python
+//        sourceSets {
+//            main
+//                    {
+//                        python
+//                                {
+//                                    srcDirs = ["src/main/python"]
+//                                }
+//                    }
+
+        versionCode 26
+        versionName "2.6"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+//        ndk {
+//            abiFilters "armeabi-v7a", "x86"
+//        }
+//        python
+//                {
+//                    buildPython "C:/Program Files/JetBrains/PyCharm 2020.3.3/bin/pycharm64.exe"
+//                }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    testImplementation 'junit:junit:4.12'
+
+    //for torch
+    implementation 'com.karumi:dexter:5.0.0'
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.firebase:firebase-messaging:17.3.3'
+    implementation 'com.google.android.gms:play-services-ads:16.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:16.0.4'
+    implementation 'com.google.android.material:material:1.0.0'
+    //for space navigation
+    implementation 'com.github.armcha:SpaceNavigationView:1.6.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

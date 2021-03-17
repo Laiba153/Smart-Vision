@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.smartvision.webappessentials.MainActivity"
+    >
+
+    <group>
+<!--        <item android:name="android:textColorPrimary"-->
+<!--            android:title="TODO">yourColor</item>-->
+
+    <item android:title="Home">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/home"
+                    android:icon="@mipmap/home"
+                    android:title="@string/home_label"
+                    />
+<!--        //color detection-->
+                <item
+                    android:id="@+id/colordetect"
+                    android:icon="@mipmap/text_detect"
+                    android:title="Color Detection" />
+
+<!--        //object detection-->
+                <item
+                    android:id="@+id/objectdetect"
+                    android:icon="@mipmap/object_detect"
+                    android:title="Object Detection" />
+
+<!--        //color detection-->
+                <item
+                    android:id="@+id/textdetect"
+                    android:icon="@mipmap/color_detect"
+                    android:title="Text Detection" />
+
+<!--        //Search Object-->
+                <item
+                    android:id="@+id/searchObject"
+                    android:icon="@mipmap/search_object"
+                    android:title="Search Object" />
+
+                <item
+                    android:id="@+id/nav_4"
+                    android:icon="@mipmap/credits"
+                    android:title="Talkback" />
+<!--        <item-->
+<!--            android:id="@+id/contacts"-->
+<!--            android:icon="@mipmap/contacts"-->
+<!--            android:title="@string/contacts_label" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_2"-->
+<!--                android:icon="@mipmap/notification"-->
+<!--                android:title="Notifications" />-->
+            </group>
+        </menu>
+    </item>
+
+        <item android:title="User">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_profile_login"
+                        android:icon="@drawable/profile"
+                        android:title="Profile" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="App">
+
+        <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_1"
+                android:icon="@mipmap/settings"
+                android:title="@string/settings_label" />
+            <item
+                android:id="@+id/share_button"
+                android:title="Share"
+                android:icon="@drawable/share"
+                app:showAsAction="ifRoom"
+                />
+            <item
+                android:id="@+id/about_us"
+                android:icon="@mipmap/about_us"
+                android:title="@string/about_us_label" />
+            <item
+                android:id="@+id/rate_us"
+                android:icon="@drawable/rate"
+                android:title="Rate Us" />
+        </group>
+        </menu>
+    </item>
+    </group>
+</menu>

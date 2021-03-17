@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.scom/tools"
+    tools:context="com.smartvision.webappessentials.MainActivity">
+
+    <item
+        android:id="@+id/onOffFlashLight"
+        android:title="Flash Light"
+        android:icon="@drawable/share_it"
+        app:showAsAction="ifRoom"
+        />
+</menu>

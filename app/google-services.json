@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "529466665762",
+    "project_id": "smart-vision-307020",
+    "storage_bucket": "smart-vision-307020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529466665762:android:e00562a277995201a7137b",
+        "android_client_info": {
+          "package_name": "com.smartvision.webappessentials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529466665762-oh4v8qi7on1773cnsbdcdcibo6dhrl7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartvision.webappessentials",
+            "certificate_hash": "3b1428c94a28c204be726006601b247028e87d2f"
+          }
+        },
+        {
+          "client_id": "529466665762-8c4bqsol23rk2im9hb8njcrbr0tkt80c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyuwNseOQXRospX1VnmU9MFGDJXe6_DgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529466665762-8c4bqsol23rk2im9hb8njcrbr0tkt80c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
